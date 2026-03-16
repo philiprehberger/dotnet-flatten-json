@@ -1,5 +1,9 @@
 # Philiprehberger.FlattenJson
 
+[![CI](https://github.com/philiprehberger/dotnet-flatten-json/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/dotnet-flatten-json/actions/workflows/ci.yml)
+[![NuGet](https://img.shields.io/nuget/v/Philiprehberger.FlattenJson.svg)](https://www.nuget.org/packages/Philiprehberger.FlattenJson)
+[![License](https://img.shields.io/github/license/philiprehberger/dotnet-flatten-json)](LICENSE)
+
 Flatten nested JSON objects into dot-notation key-value pairs, and unflatten them back.
 
 ## Install
