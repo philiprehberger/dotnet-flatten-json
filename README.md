@@ -51,6 +51,12 @@ var json = JsonFlattener.Unflatten(flat);
 - Array elements are keyed by their zero-based index: `"a.0"`, `"a.1"`, etc.
 - Uses `System.Text.Json` — no external dependencies.
 
+## Development
+
+```bash
+dotnet build src/Philiprehberger.FlattenJson.csproj --configuration Release
+```
+
 ## License
 
 MIT
