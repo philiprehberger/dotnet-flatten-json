@@ -6,7 +6,7 @@
 
 Flatten nested JSON objects into dot-notation key-value pairs, and unflatten them back.
 
-## Install
+## Installation
 
 ```bash
 dotnet add package Philiprehberger.FlattenJson
