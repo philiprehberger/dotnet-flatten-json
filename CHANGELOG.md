@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.5
+
+- Expand README with array, custom separator, and unflatten examples
+- Add LangVersion and TreatWarningsAsErrors to csproj
+
 ## 0.1.4
 
 - Add Development section to README

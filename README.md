@@ -37,6 +37,40 @@ var json = JsonFlattener.Unflatten(flat);
 // => {"a":{"b":"1","c":["2","3"]}}
 ```
 
+### Arrays
+
+```csharp
+using Philiprehberger.FlattenJson;
+
+var json = """{"users": [{"name": "Alice"}, {"name": "Bob"}]}""";
+var flat = JsonFlattener.Flatten(json);
+// { "users.0.name": "Alice", "users.1.name": "Bob" }
+```
+
+### Custom Separator
+
+```csharp
+using Philiprehberger.FlattenJson;
+
+var json = """{"db": {"host": "localhost", "port": "5432"}}""";
+var flat = JsonFlattener.Flatten(json, "/");
+// { "db/host": "localhost", "db/port": "5432" }
+```
+
+### Unflatten
+
+```csharp
+using Philiprehberger.FlattenJson;
+
+var flat = new Dictionary<string, string?>
+{
+    ["db.host"] = "localhost",
+    ["db.port"] = "5432"
+};
+var json = JsonFlattener.Unflatten(flat);
+// {"db":{"host":"localhost","port":"5432"}}
+```
+
 ## API
 
 ### `JsonFlattener`

@@ -3,8 +3,18 @@ using System.Text.Json;
 
 namespace Philiprehberger.FlattenJson;
 
+/// <summary>
+/// Provides methods to flatten nested JSON objects into dot-separated key-value pairs
+/// and to unflatten them back into nested JSON.
+/// </summary>
 public static class JsonFlattener
 {
+    /// <summary>
+    /// Flattens a nested JSON string into a dictionary of dot-separated keys and their string values.
+    /// </summary>
+    /// <param name="json">The JSON string to flatten.</param>
+    /// <param name="separator">The separator to use between nested keys. Defaults to <c>"."</c>.</param>
+    /// <returns>A dictionary mapping flattened keys to their string values, with <c>null</c> for JSON null values.</returns>
     public static Dictionary<string, string?> Flatten(string json, string separator = ".")
     {
         var result = new Dictionary<string, string?>();
@@ -49,6 +59,12 @@ public static class JsonFlattener
         }
     }
 
+    /// <summary>
+    /// Reconstructs a nested JSON string from a dictionary of flattened key-value pairs.
+    /// </summary>
+    /// <param name="flat">The dictionary of flattened keys and their string values.</param>
+    /// <param name="separator">The separator used between nested keys. Defaults to <c>"."</c>.</param>
+    /// <returns>A JSON string representing the reconstructed nested structure.</returns>
     public static string Unflatten(Dictionary<string, string?> flat, string separator = ".")
     {
         var root = new Dictionary<string, object?>();
