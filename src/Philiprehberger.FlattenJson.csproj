@@ -7,9 +7,9 @@
     <LangVersion>latest</LangVersion>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <PackageId>Philiprehberger.FlattenJson</PackageId>
-    <Version>0.1.6</Version>
+    <Version>0.1.7</Version>
     <Authors>Philip Rehberger</Authors>
-    <Description>Flatten nested JSON into dot-notation key-value pairs</Description>
+    <Description>Flatten nested JSON objects into dot-notation key-value pairs, and unflatten them back.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/philiprehberger/dotnet-flatten-json</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
