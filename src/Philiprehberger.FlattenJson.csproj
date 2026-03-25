@@ -7,7 +7,7 @@
     <LangVersion>latest</LangVersion>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <PackageId>Philiprehberger.FlattenJson</PackageId>
-    <Version>0.1.7</Version>
+    <Version>0.1.8</Version>
     <Authors>Philip Rehberger</Authors>
     <Description>Flatten nested JSON objects into dot-notation key-value pairs, and unflatten them back.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.8 (2026-03-24)
+
+- Add unit tests
+- Add test step to CI workflow
+
 ## 0.1.7 (2026-03-23)
 
 - Sync .csproj description with README
