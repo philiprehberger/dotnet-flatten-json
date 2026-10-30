@@ -1,21 +1,24 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <!-- Build settings -->
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <!-- Package metadata -->
     <PackageId>Philiprehberger.FlattenJson</PackageId>
-    <Version>0.1.10</Version>
+    <Version>0.2.0</Version>
     <Authors>Philip Rehberger</Authors>
     <Description>Flatten nested JSON objects into dot-notation key-value pairs, and unflatten them back.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>json;flatten;dot-notation;transform;dictionary</PackageTags>
     <RepositoryUrl>https://github.com/philiprehberger/dotnet-flatten-json</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <PackageTags>json;flatten;dot-notation;transform;dictionary</PackageTags>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>

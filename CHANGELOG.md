@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.0 (2026-10-30)
+
+- Add `FlattenOptions` with `Separator`, `MaxDepth`, `ArrayIndexFormat`, and `IncludeEmptyContainers`
+- Add `Flatten(string, FlattenOptions)` and `Unflatten(Dictionary<string, string?>, FlattenOptions)` overloads
+- Add `Flatten(JsonElement, FlattenOptions?)` overload for already parsed documents
+- Add bracket notation (`a[0].b`) for flattening and unflattening array indices
+- Add `MaxDepth` to store deeper subtrees as raw JSON text, restored on unflatten
+- Add `IncludeEmptyContainers` to emit and restore empty `{}` and `[]` values
+- Add card image and test command to README; reorder csproj to the template layout
+
 ## 0.1.10 (2026-03-31)
 
 - Standardize README to 3-badge format with emoji Support section
